@@ -47,3 +47,10 @@ WebLogic相关脚本
 |    weblogic_ssrf.py    |   利用WebLogic SSRF漏洞探测内网开放的端口     |参考[博客](http://blog.csdn.net/chs007chs/article/details/52514888)
 
 - - -
+
+
+### wucaicheng_Sign.py
+
+五彩城会员签到
+
+- - -
