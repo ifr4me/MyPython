@@ -13,18 +13,17 @@ postData = {'type':'2','phone':'13800138000','phonecode':'','password':'yourpass
 
 LOG_FILE = '/var/log/wucaicheng.log'
 #LOG_FILE = 'd:\\wucaicheng.log'
+
 log_level = logging.DEBUG
 logger = logging.getLogger("loggingmodule.NomalLogger")
 handler = logging.FileHandler(LOG_FILE)
 formatter = logging.Formatter("[%(asctime)s]%(message)s")
 #formatter = logging.Formatter("[%(levelname)s][%(funcName)s][%(asctime)s]%(message)s")
+
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(log_level)
-#logger.info("this is a info msg!")
-# request = urllib2.Request(wucaichengurl ,data=postData ,headers = headers)
-# response  = urllib2.urlopen(url = wucaichengurl, data=urllib.urlencode(postData))
-# print response .read()
+ 
 print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 s = requests.session()
 login = s.post(wucaichengUrl, data=postData, headers=headers)
