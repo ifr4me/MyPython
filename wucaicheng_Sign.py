@@ -1,4 +1,8 @@
 # coding=utf-8
+#cron   3 7 * * * python /root/wucaicheng.py
+__author__="iframe"
+__Date__="20171011"
+
 import requests,json,time
 import logging
 
