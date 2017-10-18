@@ -1,4 +1,8 @@
 # coding=utf-8
+#cron   58 6-10/1 * * * python /root/wucaicheng.py
+__author__="iframe"
+__Date__="20171018"
+
 import requests,json,time
 import logging
 
@@ -27,7 +31,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36
 
 wucaichengUrl = "http://bj.wucaicheng.com.cn/html/member/api/1/login"
 signUrl = 'http://bj.wucaicheng.com.cn/html/member/api/1/sign'
-postData = {'type':'2','phone':'18611111111','phonecode':'','password':'111111'}
+postData = {'type':'2','phone':'18611111111','phonecode':'','password':'yourpassword'}
 
 
 log_level = logging.DEBUG
