@@ -13,7 +13,7 @@ LOG_FILE = '/var/log/wucaicheng.log'
 #If find date in LOG_FILE, exit. so you need set cron execute twice everyday, when the server is not available.
 date = time.strftime("%Y-%m-%d", time.localtime())
 print date
-log = open(LOG_FILE)
+log = open(LOG_FILE, "a+")
 try:
     all_log = log.read()
     result = all_log.find(date)
